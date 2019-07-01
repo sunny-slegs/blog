@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-34691728-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID", { anonymize_ip: true });
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+
+    <title>SonyaSlegers.com</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- JS -->
+    <!-- config -->
+    <script src="/js/config.js"></script>
+
+    <!-- utils -->
+    <script src="/js/utils/utils.js"></script>
+
+    <!-- init -->
+    <script src="/js/init.js"></script>
+
+    <!-- templates -->
+    <script src="/js/templates/home.js"></script>
+    <script src="/js/templates/blog.js"></script>
+    <script src="/js/templates/about.js"></script>
+
+    <!-- controllers -->
+    <script src="/js/controllers/blog.js"></script>
+    <script src="/js/controllers/home.js"></script>
+
+    <!-- views -->
+    <script src="/js/views/home.js"></script>
+    <script src="/js/views/blog.js"></script>
+    <script src="/js/views/about.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="page-content" class="main-content"></div>
+      <nav role="navigation">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">About Me</a>
+        <a href="#" target="_BLANK">Resume</a>
+      </nav>
+    </div>
+  </body>
+</html>
