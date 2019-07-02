@@ -12,7 +12,7 @@ const utils = (function() {
     },
 
     render: function(element_id, content, convert_JSON) {
-      console.log("render");
+      return <p>This is the {content}. </p>;
     },
 
     request: function(
