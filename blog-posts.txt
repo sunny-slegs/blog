@@ -1,4 +1,4 @@
 Steps taken to start SPA blog with vanilla js:
 1. set up hierarchy of files from https://dev.to/vinay20045/building-a-single-page-application-with-vanilla-js
 2. outline utils skeleton functions but with console logs and no actual logic
-3. 
+3. make sure init calls utils.router correctly
