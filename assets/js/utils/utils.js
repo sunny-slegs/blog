@@ -8,7 +8,12 @@ const utils = (function() {
 
   return {
     router: function(route, data) {
-      console.log("router");
+      route = route || location.hash.slice(1) || "home";
+      let function_to_invoke = route;
+      console.log("route is", function_to_invoke);
+      if (function_to_invoke) {
+        views[function_to_invoke](data, params);
+      }
     },
 
     render: function(element_id, content, convert_JSON) {
