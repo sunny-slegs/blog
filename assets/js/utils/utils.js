@@ -12,12 +12,12 @@ const utils = (function() {
       let function_to_invoke = route;
       console.log("route is", function_to_invoke);
       if (function_to_invoke) {
-        views[function_to_invoke](data, params);
+        views[function_to_invoke]();
       }
     },
 
     render: function(element_id, content, convert_JSON) {
-      return <p>This is the {content}. </p>;
+      return content;
     },
 
     request: function(
