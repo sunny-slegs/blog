@@ -1,6 +1,9 @@
+body {
+  box-sizing: border-box;
+}
+
 nav {
   position: fixed;
-  width: 100vw;
   margin: 0 auto;
   padding: 15px;
   top: 10px;
@@ -14,19 +17,35 @@ nav {
 }
 
 nav .desktop-nav-menu{
-  font-size: 18px;
-  justify-content: center;
-  padding: 5px;
-  text-decoration: none;
   display: none;
 } 
 
-.mobile-nav-menu .top-bar, .mobile-nav-menu .middle-bar, .mobile-nav-menu .bottom-bar {
+@media only screen and (min-width:767px) {
+  nav .mobile-nav-menu {
+    display: none;
+  }
+
+  nav .desktop-nav-menu {
+    display: block;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(64, 64, 72);
+  }
+}
+
+.mobile-nav-sandwich .top-bar, .mobile-nav-sandwich .middle-bar, .mobile-nav-sandwich .bottom-bar {
   width: 22px;
   height: 2px;
   background-color: #000;
   margin: 5px;
-  /* -webkit-transition: -webkit-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+  -webkit-transition: -webkit-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
   -moz-transition: -moz-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
   -ms-transition: -ms-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
   -o-transition: -o-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
@@ -35,8 +54,34 @@ nav .desktop-nav-menu{
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;*/
+  transform-origin: 50% 50%;
 } 
+
+.mobile-nav-sandwich {
+  float: right;
+}
+
+.nav-overlay {
+  background: rgba(249, 249, 250, 0.33);
+}
+
+.mobile-nav-menu {
+  width: 161px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.mobile-nav-menu ul.nav-overlay-links li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.mobile-nav-menu ul.nav-overlay-links li a {
+  text-decoration: none;
+  color: rgb(64, 64, 72);
+  font-size: 1.5em;
+}
+
 
 .logo-wrapper .logo {
   display: none;
