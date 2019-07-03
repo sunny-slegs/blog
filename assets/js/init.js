@@ -1,7 +1,7 @@
 //initialise globals
-var templates = {};
-var controllers = {};
-var views = {};
+const templates = {};
+const controllers = {};
+const views = {};
 
 window.onload = function() {
   console.log("Application loaded at " + Date.now());

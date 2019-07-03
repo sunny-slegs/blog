@@ -27,9 +27,10 @@
     <script src="./assets/js/init.js"></script>
 
     <!-- templates -->
-    <!-- <script src="./assets/js/templates/home.mst"></script> -->
-    <script src="./assets/js/templates/blog.js"></script>
+    <script src="./assets/js/templates/home.js"></script>
     <script src="./assets/js/templates/about.js"></script>
+    <script src="./assets/js/templates/projects.js"></script>
+    <script src="./assets/js/templates/blog.js"></script>
 
     <!-- controllers -->
     <script src="./assets/js/controllers/blog.js"></script>
@@ -41,14 +42,35 @@
     <script src="./assets/js/views/about.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div id="page-content" class="main-content"></div>
+    <header role="banner">
+      <div class="logo-wrapper">
+        <h1 class="logo">Sonya Slegers</h1>
+        <h1 class="responsive-logo">SS</h1>
+      </div>
       <nav role="navigation">
-        <a href="#home">Sonya Slegers</a>
-        <a href="#blog">Blog</a>
-        <a href="#about_me">About Me</a>
-        <a href="#resume" target="_BLANK">Resume</a>
+        <label for="mobileNavMenu" class="mobile-nav-menu">
+          <div class="top-bar"></div>
+          <div class="middle-bar"></div>
+          <div class="bottom-bar"></div>
+        </label>
+        <div class="desktop-nav-menu">
+          <a
+            class="nav-link"
+            href="SonyaSlegersResume082018.pdf"
+            target="_blank"
+            >Resume</a
+          >
+          <a class="nav-link" href="#contact">Contact Me</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#top">Portfolio</a>
+          <a class="nav-link" href="#resume" target="_BLANK">Resume</a>
+        </div>
       </nav>
-    </div>
+    </header>
+    <main>
+      <div class="container">
+        <div id="page-content" class="main-content"></div>
+      </div>
+    </main>
   </body>
 </html>

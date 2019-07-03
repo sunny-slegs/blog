@@ -7,3 +7,5 @@ The templates are like madlibs with a reusable structure that take variable inpu
 The controllers are functions that decide what varialbes the templates will use
 The view is invoked by the router and then calls the controller to populate the template
 
+router --> view --> controller(render) --> template
+

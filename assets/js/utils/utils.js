@@ -16,16 +16,20 @@ const utils = (function() {
       }
     },
 
-    render: function(element_id, content, convert_JSON) {
-      return content;
-    },
-
-    request: function(
-      api_stub,
-      success_callback,
-      error_callbackcallback_params
-    ) {
-      console.log("request");
+    render: function(element_id, content) {
+      console.log("rendering content");
+      const element = document.getElementById(element_id);
+      element.innerHTML = content;
     }
+
+    // request: function(
+    //   api_stub,
+    //   success_callback,
+    //   error_callback,
+    //   callback_params
+    // ) {
+    //   api_stub = api_stub || "";
+    //   callback_params = callback_params || {};
+    // }
   };
 })();
