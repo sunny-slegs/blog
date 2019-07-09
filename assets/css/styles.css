@@ -26,7 +26,7 @@ nav .desktop-nav-menu {
 }
 
 @media only screen and (min-width: 767px) {
-  nav .mobile-nav-icon {
+  nav .mobile-nav-menu {
     display: none;
   }
 
@@ -45,9 +45,9 @@ nav .desktop-nav-menu {
   }
 }
 
-.mobile-nav-icon .top-bar,
-.mobile-nav-icon .middle-bar,
-.mobile-nav-icon .bottom-bar {
+.mobile-nav-menu .top-bar,
+.mobile-nav-menu .middle-bar,
+.mobile-nav-menu .bottom-bar {
   width: 22px;
   height: 2px;
   background-color: #000;
@@ -65,11 +65,11 @@ nav .desktop-nav-menu {
   transform-origin: 50% 50%;
 }
 
-.mobile-nav-icon {
+.mobile-nav-menu {
   float: right;
 }
 
-.hide-mobile-nav-icon {
+.hide-mobile-nav-menu {
   display: none;
 }
 
@@ -115,7 +115,7 @@ nav .desktop-nav-menu {
   width: 100vw;
   /* hero image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/assets/images/balloon.png");
+    url("assets/images/balloon.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,4 +137,28 @@ nav .desktop-nav-menu {
 
 .hero h1.logo {
   display: none;
+}
+
+.hero .button {
+  /* positioning and sizing */
+  display: block;
+  width: 200px;
+
+  /* border */
+  border: 3px solid rgb(73, 11, 73);
+  border-radius: 10px;
+
+  /* padding and margins */
+  padding: 0.5em;
+  margin-bottom: 150px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* text-styles */
+  font-size: 20px;
+  color: rgb(255, 233, 219);
+  text-decoration: none;
+  background-color: rgba(204, 88, 16);
+  text-shadow: none;
 }
