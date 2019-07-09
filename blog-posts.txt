@@ -15,17 +15,4 @@ to understand what goes on under the hood of frameworks like React and Vue.  Obv
 software projects but I wanted to get a better understanding of what a SPA is at its core.  Basically 
 
 
- <script>
-    const menuIcon = document.getElementById("mobile-nav-icon");
-    const overlay = document.getElementById("overlay");
-    const body = document.getElementById("body");
-    function showOverlay() {
-      overlay.className = "show-nav-overlay";
-      menuIcon.className = "hide-mobile-nav-icon";
-    }
-    function hideOverlay() {
-      console.log("hide overlay");
-      overlay.className = "hide-nav-overlay";
-      menuIcon.className = "mobile-nav-icon";
-    }
-  </script>
+ 

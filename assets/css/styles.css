@@ -1,12 +1,18 @@
 body {
   box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  padding-left: 10px;
 }
 
 nav {
   position: fixed;
   margin: 0 auto;
-  padding: 15px;
-  top: 10px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 10;
@@ -21,27 +27,40 @@ nav .desktop-nav-menu {
 }
 
 @media only screen and (min-width: 767px) {
-  nav .mobile-nav-icon {
+  .responsive-logo {
     display: none;
   }
 
-  nav .nav-overlay {
-    display: none;
+  .logo-wrapper .logo {
+    display: block;
+    padding: 20px;
+    color: rgb(188, 188, 194);
+    font-size: 2.5em;
+    font-family: "Libre Baskerville", serif;
   }
 
-  nav .desktop-nav-menu {
+  /* nav .mobile-nav-icon {
+    display: none;
+  } */
+
+  /* nav .nav-overlay {
+    display: none;
+  } */
+
+  /* nav .desktop-nav-menu {
     display: block;
     float: right;
-    margin-right: 10px;
-  }
-
+    margin-right: 75px;
+    padding: 25px;
+  } */
+  /* 
   .nav-link {
     font-size: 18px;
     justify-content: center;
     padding: 10px;
     text-decoration: none;
     color: rgb(64, 64, 72);
-  }
+  } */
 }
 
 .mobile-nav-icon .top-bar,
@@ -64,11 +83,21 @@ nav .desktop-nav-menu {
   transform-origin: 50% 50%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .mobile-nav-icon .top-bar,
+  .mobile-nav-icon .middle-bar,
+  .mobile-nav-icon .bottom-bar {
+    background-color: rgb(188, 188, 194);
+  }
+}
+
 .mobile-nav-icon {
   float: right;
+  padding: 50px;
 }
 
 .nav-overlay {
+  margin: 0px;
   background: rgba(249, 249, 250, 0.33);
   display: none;
 }
@@ -90,7 +119,7 @@ nav .desktop-nav-menu {
   font-size: 1.5em;
 }
 
-.logo-wrapper .logo {
+.logo {
   display: none;
 }
 
@@ -133,12 +162,12 @@ header {
   text-shadow: rgb(4, 31, 6) 4px 4px 4px;
 }
 
-.hero h1.responsive-logo {
+.logo-wrapper .responsive-logo {
   font-size: 50px;
   font-weight: 700;
   position: fixed;
-  top: -45px;
-  margin-left: 5px;
+  color: rgb(188, 188, 194);
+  margin-left: 40px;
 }
 
 .hero h1.logo {
