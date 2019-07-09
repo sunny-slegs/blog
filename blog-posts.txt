@@ -9,3 +9,23 @@ The view is invoked by the router and then calls the controller to populate the 
 
 router --> view --> controller(render) --> template
 
+Post about setting up a very simple SPA
+This is how I set up a verrrry simple SPA without using a framework.  I did this project because I wanted
+to understand what goes on under the hood of frameworks like React and Vue.  Obviously they are super complex
+software projects but I wanted to get a better understanding of what a SPA is at its core.  Basically 
+
+
+ <script>
+    const menuIcon = document.getElementById("mobile-nav-icon");
+    const overlay = document.getElementById("overlay");
+    const body = document.getElementById("body");
+    function showOverlay() {
+      overlay.className = "show-nav-overlay";
+      menuIcon.className = "hide-mobile-nav-icon";
+    }
+    function hideOverlay() {
+      console.log("hide overlay");
+      overlay.className = "hide-nav-overlay";
+      menuIcon.className = "mobile-nav-icon";
+    }
+  </script>
