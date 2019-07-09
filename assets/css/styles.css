@@ -38,29 +38,6 @@ nav .desktop-nav-menu {
     font-size: 2.5em;
     font-family: "Libre Baskerville", serif;
   }
-
-  /* nav .mobile-nav-icon {
-    display: none;
-  } */
-
-  /* nav .nav-overlay {
-    display: none;
-  } */
-
-  /* nav .desktop-nav-menu {
-    display: block;
-    float: right;
-    margin-right: 75px;
-    padding: 25px;
-  } */
-  /* 
-  .nav-link {
-    font-size: 18px;
-    justify-content: center;
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(64, 64, 72);
-  } */
 }
 
 .mobile-nav-icon .top-bar,
@@ -122,21 +99,6 @@ nav .desktop-nav-menu {
 .logo {
   display: none;
 }
-
-/* @media only screen and (min-width: 650px) {
-   nav a {
-  float: right;
-  margin-right: 10px;
-}
-.hero h1 {
-  font-size: 60px;
-  font-weight: 900;
-  position: fixed;
-  top: -50px;
-  margin-left: 10px;
-}
-} */
-/* Hero */
 
 header {
   margin: 0;
