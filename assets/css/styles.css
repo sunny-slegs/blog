@@ -21,7 +21,7 @@ nav .desktop-nav-menu {
 }
 
 @media only screen and (min-width: 767px) {
-  nav .mobile-nav-menu {
+  nav .mobile-nav-icon {
     display: none;
   }
 
@@ -40,9 +40,9 @@ nav .desktop-nav-menu {
   }
 }
 
-.mobile-nav-sandwich .top-bar,
-.mobile-nav-sandwich .middle-bar,
-.mobile-nav-sandwich .bottom-bar {
+.mobile-nav-icon .top-bar,
+.mobile-nav-icon .middle-bar,
+.mobile-nav-icon .bottom-bar {
   width: 22px;
   height: 2px;
   background-color: #000;
@@ -60,7 +60,7 @@ nav .desktop-nav-menu {
   transform-origin: 50% 50%;
 }
 
-.mobile-nav-sandwich {
+.mobile-nav-icon {
   float: right;
 }
 
@@ -74,12 +74,12 @@ nav .desktop-nav-menu {
   padding: 10px;
 }
 
-.mobile-nav-menu ul.nav-overlay-links li {
+.mobile-nav-menu ul.mobile-nav-links li {
   list-style-type: none;
   padding: 10px;
 }
 
-.mobile-nav-menu ul.nav-overlay-links li a {
+.mobile-nav-menu ul.mobile-nav-links li a {
   text-decoration: none;
   color: rgb(64, 64, 72);
   font-size: 1.5em;
@@ -138,28 +138,4 @@ header {
 
 .hero h1.logo {
   display: none;
-}
-
-.hero .button {
-  /* positioning and sizing */
-  display: block;
-  width: 200px;
-
-  /* border */
-  border: 3px solid rgb(73, 11, 73);
-  border-radius: 10px;
-
-  /* padding and margins */
-  padding: 0.5em;
-  margin-bottom: 150px;
-  margin-top: 70px;
-  margin-right: auto;
-  margin-left: auto;
-
-  /* text-styles */
-  font-size: 20px;
-  color: rgb(255, 233, 219);
-  text-decoration: none;
-  background-color: rgba(204, 88, 16);
-  text-shadow: none;
 }
