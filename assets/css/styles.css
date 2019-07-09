@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   box-sizing: border-box;
 }
@@ -6,8 +7,11 @@ header {
   margin: 0;
 }
 
+=======
+>>>>>>> parent of 95c041b... mobile and desktop navigation set up except for js animation
 nav {
   position: fixed;
+  width: 100vw;
   margin: 0 auto;
   padding: 15px;
   top: 10px;
@@ -20,10 +24,19 @@ nav {
   text-shadow: rgb(255, 233, 219) 1px 1px 1px;
 }
 
+<<<<<<< HEAD
 nav .desktop-nav-menu {
+=======
+nav .desktop-nav-menu{
+  font-size: 18px;
+  justify-content: center;
+  padding: 5px;
+  text-decoration: none;
+>>>>>>> parent of 95c041b... mobile and desktop navigation set up except for js animation
   display: none;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 767px) {
   nav .mobile-nav-icon {
     display: none;
@@ -47,20 +60,32 @@ nav .desktop-nav-menu {
 .mobile-nav-icon .top-bar,
 .mobile-nav-icon .middle-bar,
 .mobile-nav-icon .bottom-bar {
+=======
+.mobile-nav-menu .top-bar, .mobile-nav-menu .middle-bar, .mobile-nav-menu .bottom-bar {
+>>>>>>> parent of 95c041b... mobile and desktop navigation set up except for js animation
   width: 22px;
   height: 2px;
   background-color: #000;
   margin: 5px;
+<<<<<<< HEAD
   -webkit-transition: -webkit-transform 0.1s 0s ease-in-out,
     top 0.1s 0.1s ease-in-out;
   -moz-transition: -moz-transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
   -ms-transition: -ms-transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
   -o-transition: -o-transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
   transition: transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
+=======
+  /* -webkit-transition: -webkit-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+  -moz-transition: -moz-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+  -ms-transition: -ms-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+  -o-transition: -o-transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+  transition: transform .1s 0s ease-in-out,top .1s .1s ease-in-out;
+>>>>>>> parent of 95c041b... mobile and desktop navigation set up except for js animation
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
+<<<<<<< HEAD
   transform-origin: 50% 50%;
 }
 
@@ -102,6 +127,11 @@ nav .desktop-nav-menu {
   font-size: 1.5em;
 }
 
+=======
+  transform-origin: 50% 50%;*/
+} 
+
+>>>>>>> parent of 95c041b... mobile and desktop navigation set up except for js animation
 .logo-wrapper .logo {
   display: none;
 }
