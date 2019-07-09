@@ -1,5 +1,5 @@
 templates.home = `
-  <div class="home-page hero" id="top">
+  <div class="home-page">
     <button class="contact">Contact Me</button>
   </div>
   `;

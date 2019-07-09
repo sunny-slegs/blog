@@ -1,0 +1,58 @@
+1. implement js animation for sandwich menu
+2. put nav into its own template
+3. hook up about, resume, contact pages to router
+
+
+.hero {
+  /* flex box */
+  display: flex;
+  /* sizing */
+  height: 100vh;
+  width: 100vw;
+  /* hero image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url('../images/balloon.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* position: relative; */
+
+  /* text styles */
+  color: rgb(255, 233, 219);
+  text-shadow: rgb(4, 31, 6) 4px 4px 4px;
+}
+
+.hero h1.responsive-logo {
+  font-size: 50px;
+  font-weight: 700;
+  position: fixed;
+  top: -45px;
+  margin-left: 5px;
+}
+
+.hero h1.logo {
+  display: none;
+}
+
+.hero .button {
+  /* positioning and sizing */
+  display: inline-block;
+  width: 200px;
+
+  /* border */
+  border: 3px solid rgb(73, 11, 73);
+  border-radius: 10px;
+
+  /* padding and margins */
+  padding: 0.5em;
+  margin-bottom: 150px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* text-styles */
+  font-size: 20px;
+  color: rgb(255, 233, 219);
+  text-decoration: none;
+  background-color: rgba(204, 88, 16);
+  text-shadow: none;
